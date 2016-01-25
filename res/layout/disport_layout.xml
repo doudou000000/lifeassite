@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/disport_console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/map_route_plan_text_bg"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/disport_tab_music"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:background="@drawable/disport_movie"/>
+
+            <RadioButton
+                android:id="@+id/disport_tab_cartoon"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/disport_star"/>
+
+            <RadioButton
+                android:id="@+id/disport_tab_joke"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/disport_joke"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/disport_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/disport_console_line_bottom" >
+    </FrameLayout>
+
+</RelativeLayout>

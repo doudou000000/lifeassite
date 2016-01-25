@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/map_route_plan_text_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_arraw"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/map_route_plan_text_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/map_route_plan__text_dur_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/grey"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/map_route_plan__text_dic_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/map_route_plan__text_dur_tv"
+                android:layout_marginTop="5dip"
+                android:textColor="@color/grey"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/map_route_plan_text_map_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/map_route_plan__text_dic_tv"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red"
+                android:textSize="12dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dip"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+<!--         <RelativeLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" > -->
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/map_route_plan_list__text_start_iv" -->
+<!--                 android:layout_width="15dp" -->
+<!--                 android:layout_height="15dp" -->
+<!--                 android:layout_marginLeft="20dp" -->
+<!--                 android:src="@drawable/timeline_green" /> -->
+
+<!--             <View -->
+<!--                 android:layout_width="1dp" -->
+<!--                 android:layout_height="25dp" -->
+<!--                 android:layout_below="@id/map_route_plan_list__text_start_iv" -->
+<!--                 android:layout_marginLeft="25dip" -->
+<!--                 android:background="#A6A6A6" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/express_show_content" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentTop="true" -->
+<!--                 android:layout_marginLeft="15dp" -->
+<!--                 android:layout_toRightOf="@+id/map_route_plan_list__text_start_iv" -->
+<!--                 android:text="测试数据" -->
+<!--                 android:textSize="12dp" /> -->
+<!--         </RelativeLayout> -->
+
+        <ListView
+            android:id="@+id/map_route_plan_list__text_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" >
+        </ListView>
+<!--                 <RelativeLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" > -->
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/map_route_plan_list__text_start_iv" -->
+<!--                 android:layout_width="15dp" -->
+<!--                 android:layout_height="15dp" -->
+<!--                 android:layout_marginLeft="20dp" -->
+<!--                 android:src="@drawable/timeline_green" /> -->
+
+<!--             <View -->
+<!--                 android:layout_width="1dp" -->
+<!--                 android:layout_height="25dp" -->
+<!--                 android:layout_below="@id/map_route_plan_list__text_start_iv" -->
+<!--                 android:layout_marginLeft="25dip" -->
+<!--                 android:background="#A6A6A6" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/express_show_content" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentTop="true" -->
+<!--                 android:layout_marginLeft="15dp" -->
+<!--                 android:layout_toRightOf="@+id/map_route_plan_list__text_start_iv" -->
+<!--                 android:text="测试数据" -->
+<!--                 android:textSize="12dp" /> -->
+<!--         </RelativeLayout> -->
+    </LinearLayout>
+
+</LinearLayout>

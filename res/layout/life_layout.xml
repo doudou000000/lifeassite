@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/life_console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/map_route_plan_text_bg"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/life_tab_weather"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:background="@drawable/life_weather"/>
+            <RadioButton
+                android:id="@+id/life_tab_express"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/life_express"/>
+
+
+            <RadioButton
+                android:id="@+id/life_tab_map"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/life_map" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/life_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/life_console_line_bottom" >
+    </FrameLayout>
+
+</RelativeLayout>

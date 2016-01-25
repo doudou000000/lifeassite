@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/loading_more_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/loading_more_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/loading_more"
+            android:textSize="20dip" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

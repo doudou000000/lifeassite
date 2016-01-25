@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_layout_bg_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_qing_tian"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/weather_layout_prs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"      
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/weather_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <ImageButton
+                    android:id="@+id/weather_menu_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/left_menu_button" />
+
+                <TextView
+                    android:id="@+id/weather_current_city_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/wearther_search_city_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/seach_city" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginTop="30dip" >
+
+                    <TextView
+                        android:id="@+id/weather_temperature_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="30dip" />
+
+                    <TextView
+                        android:id="@+id/weather_air_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/weather_temperature_tv"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/weather_shi_du_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dip"
+                        android:background="#EEEEEE" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/weather_humidity_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="15dip"
+                            android:textColor="@android:color/white" />
+
+                        <View
+                            android:layout_width="0.1dip"
+                            android:layout_height="100dip"
+                            android:background="#EEEEEE" />
+
+                        <TextView
+                            android:id="@+id/weather_visibily_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="15dip"
+                            android:textColor="@android:color/white" />
+
+                        <View
+                            android:layout_width="0.1dip"
+                            android:layout_height="100dip"
+                            android:background="#EEEEEE" />
+
+                        <TextView
+                            android:id="@+id/weather_wind_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="15dip"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dip"
+                        android:background="#EEEEEE" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/weather_line_chart_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" >
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/weather_line_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dip" >
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tomorrow_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/tomorrow_weather_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/tomorrow_weather_du_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/second_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/second_weather_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/second_weather_du_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/third_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/third_weather_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/third_weather_du_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/fouth_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/fouth_weather_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+
+                            <TextView
+                                android:id="@+id/fouth_weather_du_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="#EEEEEE"
+                                android:textSize="12dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/weather_advice" />
+    </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

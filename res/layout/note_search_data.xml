@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+   <RelativeLayout
+        android:id="@+id/home_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_bar_bg" >
+
+        <TextView
+            style="@style/textStye"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/search_home_title"
+            android:textColor="@color/white" />
+        <LinearLayout 
+            android:id="@+id/search_zi_liao_back_ll"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:gravity="center">
+                    <ImageButton
+            android:id="@+id/search_zi_liao_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:background="@null" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dip"
+       android:layout_gravity="center"
+       android:background="#ffffff" >
+
+       <EditText
+           android:id="@+id/search_zi_liao_edit"
+           android:layout_width="0.0dip"
+           android:layout_height="wrap_content"
+           android:hint="@string/search_title_et"
+           style="@style/EditextHitSize"
+           android:layout_marginLeft="5dip"
+           android:layout_weight="1"
+           android:background="@drawable/com_tenpay_android_edit_focus" />
+
+
+       <Spinner
+           android:id="@+id/search_data_classes"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dip"
+           android:entries="@array/search_classes"
+           android:background="@drawable/abs__spinner" />
+
+   </LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="0.1dip"
+       android:background="#CFCFCF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/search_zi_liao_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

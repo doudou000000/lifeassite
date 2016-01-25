@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bar_bg" >
+
+        <ImageButton
+            android:id="@+id/more_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/left_menu_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/appx_banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+	    <RelativeLayout
+        android:id="@+id/more_history_today_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/usermainpage_bg_center"
+        android:clickable="true" >
+
+       <ImageView
+            android:id="@+id/more_history_today_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/history_today_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/more_history_today_iv"
+            android:text="历史上的今天"
+            android:textColor="#202020"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:scaleType="matrix"
+            android:background="@drawable/right_arraw"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_current_version_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/usermainpage_bg_center"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/more_current_version_iv"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/banben"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/more_current_version_iv"
+            android:text="当前版本"
+            android:textColor="#202020"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:scaleType="matrix"
+            android:background="@drawable/right_arraw" />
+    </RelativeLayout>
+
+</LinearLayout>

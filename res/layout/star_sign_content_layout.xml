@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star_sign_content_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:id="@+id/star_sign_content_back_ll"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/star_sign_back_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/star_sign_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/star_sign_content_bg_title"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tabitems"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/star_sign_cotent_tb_week"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:text="本周运势"
+                android:textColor="@drawable/star_sign_text_color" />
+
+            <RadioButton
+                android:id="@+id/star_sign_cotent_tb_month"
+                style="@style/main_tab_bottom"
+                android:text="本月运势"
+                android:textColor="@drawable/star_sign_text_color" />
+
+            <RadioButton
+                android:id="@+id/star_sign_cotent_tb_year"
+                style="@style/main_tab_bottom"
+                android:text="本年运势"
+                android:textColor="@drawable/star_sign_text_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/star_sign_cotent_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

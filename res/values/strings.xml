@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">口袋帮</string>
+    <string name="home_title">笔记</string>
+    <string name="add_ziliao">新增</string>
+    <string name="ziliao_title">标题</string>
+    <string name="ziliao_classes">类别</string>
+    <string name="ziliao_create_time">时间</string>
+    <string name="ziliao_if_photos">有图</string>
+    <string name="ziliao_if_attach">有附件</string>
+    <string name="ziliao_title_add">标题:</string>
+    <string name="ziliao_classes_add">类别:</string>
+    <string name="ziliao_desc_add">内容:</string>
+    <string name="ziliao_photo_add">截图</string>
+    <string name="ziliao_mode_add_btn">浏览</string>
+    <string name="ziliao_canmora_photo_add">拍照</string>
+    <string name="ziliao_xiang_ce_photo_add">相册</string>
+    <string name="ziliao_title_add_hit">请输入文章标题</string>
+    <string name="ziliao_classes_add_hit">请输入文章类别，如android、java等</string>
+    <string name="ziliao_desc_add_hit">请输入文章内容</string>
+    <string name="ziliao_mode_add_hit">请输入或点击按钮选择源码或附件</string>
+    <string name="xiang_qing_title">详情</string>
+    <string name="loading_more">加载更多</string>
+    <string name="home_delete_qx">全选</string>
+    <string name="home_delete_cancel">取消</string>
+    <string name="home_delete_dl">删除</string>
+    <string name="search_home_title"> 文章检索</string>
+    <string name="search_title_et">请输入您要查询的文章标题</string>
+    <string name="spin_prompt"> 请选择类别 </string>
+
+    <string-array name="classes">
+        <item> Android </item>
+        <item> Java </item>
+    </string-array>
+    <string-array name="search_classes">
+        <item> 标题 </item>
+        <item> 类别 </item>
+    </string-array>
+
+    <string name="add_classes_name">增加类别</string>
+    <string name="classes_name">名称：</string>
+    
+</resources>

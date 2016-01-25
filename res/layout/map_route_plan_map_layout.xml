@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/map_route_plan_map_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/map_route_plan_text_bg"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/top_arraw_blue"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/map_route_plan_map_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dip"
+                android:layout_marginTop="5dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/map_route_plan_map_dur_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/grey"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/map_route_plan_map_dic_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/map_route_plan_map_dur_tv"
+                android:layout_marginTop="5dip"
+                android:textColor="@color/grey"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/map_route_plan_map_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/map_route_plan_map_dic_tv"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red"
+                android:textSize="12dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_route_plan_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/map_route_plan_map_ll"
+        android:clickable="true" />
+
+</RelativeLayout>

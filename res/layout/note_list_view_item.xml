@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/zi_liao_photo"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_margin="5dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/wutu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:layout_margin="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zi_liao_title"
+            style="@style/textStye"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text="@string/ziliao_title" />
+
+        <LinearLayout
+            android:id="@+id/zi_liao_classes_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/zi_liao_classes"
+                style="@style/smallTextStye"
+                android:text="@string/ziliao_classes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zi_liao_create_time_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:id="@+id/zi_liao_create_time"
+                style="@style/smallTextStye"
+                android:text="@string/ziliao_create_time" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/list_view_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/abc_ic_go_search_api_holo_light" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/zi_liao_create_time_ll"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/zi_liao_classes_ll" >
+
+            <TextView
+                android:id="@+id/if_photos_tv"
+                style="@style/smallTextStye"
+                android:text="@string/ziliao_if_photos"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/list_view_item_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="10dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:background="@drawable/joke_bg_title" >
+
+        <TextView
+            android:id="@+id/joke_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笑话标题" />
+
+        <TextView
+            android:id="@+id/joke_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="时间" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:background="@drawable/joke_bg_content" >
+
+        <TextView
+            android:id="@+id/joke_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容" />
+
+    </LinearLayout>
+
+</LinearLayout>

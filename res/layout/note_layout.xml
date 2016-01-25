@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <RelativeLayout
+       android:id="@+id/note_layout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bar_bg" >
+
+        <ImageButton
+            android:id="@+id/note_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/left_menu_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="笔记"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+                <ImageView
+            android:id="@+id/note_search_Iv"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            
+            android:layout_marginRight="5dip"
+                        android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            
+            android:background="@drawable/note_search" />
+        <ImageView
+            android:id="@+id/note_add_Iv"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+android:layout_toLeftOf="@+id/note_search_Iv"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/note_add" />
+        
+
+        
+        <ImageView
+            android:id="@+id/note_cancel_tv"
+            android:layout_width="15dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/note_add_Iv"
+            android:background="@drawable/note_delete"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/note_delete_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#eeffcc"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/note_delete_qx_btn"
+            style="@style/HomeDeleteBtn"
+            android:text="@string/home_delete_qx" />
+
+        <Button
+            android:id="@+id/note_delete_dl_btn"
+            style="@style/HomeDeleteBtn"
+            android:text="@string/home_delete_dl" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/note_delete_ll"
+        android:layout_below="@+id/note_layout_rl" >
+
+        <ListView
+            android:id="@+id/note_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

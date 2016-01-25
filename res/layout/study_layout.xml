@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/study_console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/map_route_plan_text_bg"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/study_tab_note"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:background="@drawable/study_note" />
+
+            <RadioButton
+                android:id="@+id/study_tab_translation"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/study_translation" />
+
+            <RadioButton
+                android:id="@+id/study_tab_dic"
+                style="@style/main_tab_bottom"
+                android:background="@drawable/study_dictionary" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/study_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/study_console_line_bottom" >
+    </FrameLayout>
+
+</RelativeLayout>
